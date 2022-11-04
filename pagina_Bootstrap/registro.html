@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden De Santiago</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel='icon' href='favicon.png' type='image/x-icon' sizes="16x16" />
+
+    <style>
+        .navbar .nav-item:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        .dropdown-toggle::after {
+            transition: transform 0.15s linear;
+        }
+
+        .show.dropdown .dropdown-toggle::after {
+            transform: translateY(3px);
+        }
+
+        .menu {
+            display: ruby;
+        }
+
+        .menu .btn-primary {
+            width: 130px;
+            color: red;
+            background-color: black;
+        }
+
+        i img {
+            width: 30px !important;
+        }
+
+        .btn-primary a {
+            text-decoration: none !important;
+            color: red;
+        }
+        .btn-primary{
+            color: red;
+            background-color: black;
+        }
+
+        .btn-primary:hover {
+            color: red !important;
+            background-color: black !important;
+        }
+        fieldset{
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px 5px;
+            background-color: black;
+            color: red;
+        }
+        body{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid w-100">
+
+            <div class="menu w-50 ruby">
+                <i><img src="favicon.png" alt="Orden Santiago"></i>
+                <button class="btn btn-primary " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <a href="aterrizaje.html">Home</a>
+                </button>
+                <button class="btn btn-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Info
+                </button>
+                <button class="btn btn-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <a href="actividades.html">Actividades</a>
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Opciones
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="registro.html">Registro</a></li>
+                        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="input-group w-25">
+
+                <input id="search-input" type="search" id="form1" class="form-control" />
+
+
+                <button id="search-button" type="button" class="btn btn-primary">
+                    search
+                </button>
+            </div>
+        </div>
+    </nav>
+    <fieldset>
+        <legend>Formulario de Registro</legend>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Email" class="col-form-label">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Correo">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Password" class="col-form-label">Password</label>
+                    <input type="pass" class="form-control" id="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Address" class="col-form-label">Address</label>
+                <input type="text" class="form-control" id="Address" placeholder="Un domicilio">
+            </div>
+            <div class="form-group">
+                <label for="Address1" class="col-form-label">Address 2</label>
+                <input type="text" class="form-control" id="Address1" placeholder="Segundo domicilio">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="City" class="col-form-label">City</label>
+                    <input type="text" class="form-control" id="City" placeholder="Ciudad">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="State" class="col-form-label">State</label>
+                    <select id="State" class="form-control">Choose</select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="Zip" class="col-form-label">Zip</label>
+                    <input type="text" class="form-control" id="Zip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </fieldset>
+    
+</body>
+
+</html>
